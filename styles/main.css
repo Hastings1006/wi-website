@@ -1,3 +1,4 @@
+/* universal */
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ body {
   margin: 0;
 }
 
+/* navbar */
 nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -54,47 +56,6 @@ nav a:hover {
 nav ul li:first-child {
   margin-right: auto;
 }
-.content{
-  flex: 1;
-}
-banner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-banner img {
-  width: 50vw;
-  height: 60vh;
-  object-fit: cover;
-}
-banner h1{
-  /* position: absolute; */
-  font-size: 2.5em;
-  margin-bottom: 2rem;
-}
-footer{
-  /* background-color: #6b7d31; */
-  /* color: white; */
-  padding: 2em;
-  padding-bottom: 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-footer i{
-  text-decoration: none;
-  color: #043d32;
-  }
-footer a{
-  text-decoration: none;
-
-}
-footer a:visited {
-  text-decoration: none;
-  color: #043d32;
-}
 .sidebar{
   position: fixed;
   top: 0;
@@ -119,12 +80,83 @@ footer a:visited {
 .menuButton{
   display: none;
 }
+
+/* main */
+.content{
+  flex: 1;
+}
+banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+banner img {
+  width: 50vw;
+  height: 60vh;
+  object-fit: cover;
+}
+banner h1{
+  /* position: absolute; */
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+}
+.events-btn{
+  background-color: #043d32;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 5px;
+  margin-top: 1em;
+  border-radius: .1875rem;
+  font-family: Lato,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif;
+}
+.events-btn:hover{
+  background-color: #6b7d31;
+  transition-duration: 2ms;
+}
+
+/* footer */
+footer{
+  /* background-color: #6b7d31; */
+  /* color: white; */
+  padding: 2em;
+  padding-bottom: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer i{
+  text-decoration: none;
+  color: #043d32;
+}
+footer a{
+  text-decoration: none;
+
+}
+footer a:visited {
+  text-decoration: none;
+  color: #043d32;
+}
+.banner-content{
+  display: flex;
+}
 .banner-welcome{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  text-align: justify;
+  padding: 2em;
+  font-size: large;
+  font-weight:bold;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  height:inherit;
 }
 .footer-main{
   display: flex;
@@ -155,6 +187,8 @@ footer a:visited {
   width: 100vw;
   padding: 2;
 }
+
+/* media */
 @media(max-width: 800px){
   .hideOnMobile{
     display: none;
@@ -166,5 +200,10 @@ footer a:visited {
 @media(max-width:400px){
   .sidebar{
     width: 100%;
+  }
+  .banner-welcome {
+    font-size: small;
+    padding: 0.5em;
+    text-align: center;
   }
 }
