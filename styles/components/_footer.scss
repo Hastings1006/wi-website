@@ -1,5 +1,5 @@
 footer {
-  /* background-color: #6b7d31; */
+  /* background-color: $green; */
   /* color: white; */
   padding: 2em;
   padding-bottom: 0;
@@ -12,7 +12,7 @@ footer {
 
 footer i {
   text-decoration: none;
-  color: #043d32;
+  color: $dark-green;
 }
 
 footer a {
@@ -22,7 +22,7 @@ footer a {
 
 footer a:visited {
   text-decoration: none;
-  color: #043d32;
+  color: $dark-green;
 }
 
 .footer-main {
@@ -43,7 +43,7 @@ footer a:visited {
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: #043d32;
+  background-color: $dark-green;
   padding: 1em 2em 1em;
   align-items: end;
 }
@@ -53,7 +53,7 @@ footer a:visited {
   justify-content: space-between;
   align-items: center;
   font-size: xx-small;
-  background-color: #043d32;
+  background-color: $dark-green;
   width: 100vw;
   padding: 2;
 }

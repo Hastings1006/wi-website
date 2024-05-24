@@ -1,6 +1,11 @@
-@import 'pages/home';
+/* @import 'variables/colors.scss'; */
 
-@import "components/index";
+@import 'components/index';
+
+@import 'pages/home';
+@import 'pages/about';
+
+
 
 /* universal */
 * {
