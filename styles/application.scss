@@ -1,0 +1,25 @@
+@import 'pages/home';
+
+@import "components/index";
+
+/* universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  /* if issues on mobile set min-height to 100% not 100vh and add html { height:100%;}*/
+  margin: 0;
+}
