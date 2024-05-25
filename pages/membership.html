@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenilworth WI</title>
-  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="../css/application.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -29,6 +29,37 @@
       <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
   </nav>
+  <div class="content">
+    <div class="contact-form">
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="first">First:</label>
+            <input type="text" name="first" id="first_name">
+          </li>
+          <li>
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="last_name">
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="user_email">
+          </li>
+          <li>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="email_subject">
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea name="user_message" id="msg"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
   <footer>
     <div class="footer-main">
       <img src="/images/wi-logo.png" alt="wi-logo" height="60px">
@@ -44,6 +75,6 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/main.js"></script>
+  <script src="../scripts/main.js"></script>
 </body>
 </html>
