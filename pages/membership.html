@@ -31,27 +31,28 @@
   </nav>
   <div class="content">
     <div class="contact-form">
-      <form action="/my-handling-form-page" method="post">
+      <form action="https://api.web3forms.com/submit" method="POST">
         <ul>
           <li>
-            <label for="first">First:</label>
-            <input type="text" name="first" id="first_name">
+            <label for="name">Name:</label>
+            <input type="hidden" name="access_key" value="form-access-key">
+            <input type="text" name="name" id="name" required>
           </li>
-          <li>
+          <!-- <li>
             <label for="surname">Surname</label>
             <input type="text" name="surname" id="last_name">
-          </li>
+          </li> -->
           <li>
             <label for="mail">Email:</label>
-            <input type="email" name="mail" id="user_email">
+            <input type="email" name="mail" id="user_email" required>
           </li>
           <li>
             <label for="subject">Subject</label>
-            <input type="text" name="subject" id="email_subject">
+            <input type="text" name="subject" id="email_subject" required>
           </li>
           <li>
             <label for="msg">Message:</label>
-            <textarea name="user_message" id="msg"></textarea>
+            <textarea name="user_message" id="msg"></textarea required>
           </li>
           <li class="button">
             <button type="submit">Submit</button>
